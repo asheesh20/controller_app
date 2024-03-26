@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Power extends StatelessWidget {
-  const Power({super.key});
+class MenuScreen extends StatelessWidget {
+  const MenuScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +10,13 @@ class Power extends StatelessWidget {
         BoxShadow(
           color: Colors.grey.withOpacity(0.4),
           spreadRadius: 15,
-          blurRadius: 1,
-          offset: const Offset(0, 1),
+          //blurStyle: BlurStyle.solid,
+          // blurRadius: 1,
+          offset: const Offset(0, 0),
         ),
       ]),
       child: Icon(
-        Icons.power_settings_new_rounded,
+        Icons.menu_outlined,
       ),
     );
   }

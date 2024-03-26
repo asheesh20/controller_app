@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 
-class MenuScreen extends StatelessWidget {
-  const MenuScreen({super.key});
+class Forward extends StatelessWidget {
+  const Forward({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(shape: BoxShape.circle, boxShadow: [
         BoxShadow(
-          color: Colors.grey.withOpacity(0.4),
+          color: Colors.grey.withOpacity(0.25),
           spreadRadius: 15,
-          blurStyle: BlurStyle.solid,
+          blurStyle: BlurStyle.inner,
           blurRadius: 1,
           offset: const Offset(0, 1),
         ),
       ]),
-      child: Icon(
-        Icons.menu_outlined,
-      ),
+      child: const Icon(Icons.settings_remote),
     );
   }
 }

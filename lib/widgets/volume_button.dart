@@ -26,18 +26,21 @@ class VolumeButton extends StatelessWidget {
             BoxShadow(
               color: Colors.grey.withOpacity(0.4),
               spreadRadius: 15,
-              blurRadius: 1,
+              //blurRadius: 1,
               offset: const Offset(0, 1),
             ),
           ],
           borderRadius: BorderRadius.circular(40)),
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(Icons.add),
           SizedBox(height: 40),
-          Text('Volume'),
+          Text(
+            'Volume',
+            style: TextStyle(fontWeight: FontWeight.w500),
+          ),
           SizedBox(
             height: 40,
           ),

@@ -13,9 +13,9 @@ class OkButton extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: Colors.grey.withOpacity(0.4),
-            spreadRadius: 40,
-            blurRadius: 1,
-            //blurStyle: BlurStyle.inner,
+            spreadRadius: 30,
+            blurRadius: 0.0,
+            blurStyle: BlurStyle.inner,
             offset: const Offset(0, 1),
           ),
         ],
@@ -36,7 +36,7 @@ class OkButton extends StatelessWidget {
                 ),
                 Text(
                   'OK',
-                  style: TextStyle(fontSize: 16.3),
+                  style: TextStyle(fontSize: 16.3, fontWeight: FontWeight.w600),
                 ),
                 SizedBox(
                   width: 10,

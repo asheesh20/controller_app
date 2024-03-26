@@ -1,9 +1,11 @@
-import 'package:controller_app/screens/widgets/Channel_button.dart';
-import 'package:controller_app/screens/widgets/menu.dart';
-import 'package:controller_app/screens/widgets/numbers.dart';
-import 'package:controller_app/screens/widgets/ok_button.dart';
-import 'package:controller_app/screens/widgets/power.dart';
-import 'package:controller_app/screens/widgets/volume_button.dart';
+import 'package:controller_app/widgets/Channel_button.dart';
+import 'package:controller_app/widgets/back.dart';
+import 'package:controller_app/widgets/forward.dart';
+import 'package:controller_app/widgets/menu.dart';
+import 'package:controller_app/widgets/numbers.dart';
+import 'package:controller_app/widgets/ok_button.dart';
+import 'package:controller_app/widgets/power.dart';
+import 'package:controller_app/widgets/volume_button.dart';
 import 'package:flutter/material.dart';
 
 class TvScreen extends StatelessWidget {
@@ -42,7 +44,7 @@ class TvScreen extends StatelessWidget {
                 boxShadow: [
                   BoxShadow(
                     color: Colors.grey.withOpacity(0.4),
-                    blurRadius: 0,
+                    //blurRadius: 0,
                     spreadRadius: 1,
                   ),
                 ],
@@ -66,9 +68,17 @@ class TvScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       VolumeButton(),
-                      SizedBox(
-                        width: 50,
+                      Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Back(),
+                          SizedBox(
+                            height: 60,
+                          ),
+                          Forward(),
+                        ],
                       ),
+                      // SizedBox(width: 50),
                       ChannelButton(),
                     ],
                   ),
