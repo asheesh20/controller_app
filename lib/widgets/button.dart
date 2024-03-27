@@ -17,27 +17,27 @@ class Button extends StatelessWidget {
       width: 57,
       height: 180,
       decoration: BoxDecoration(
-          shape: BoxShape.rectangle,
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.withOpacity(0.4),
-              spreadRadius: 15,
-              //blurRadius: 1,
-              offset: const Offset(0, 1),
-            ),
-          ],
-          borderRadius: BorderRadius.circular(40)),
+        shape: BoxShape.rectangle,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.4),
+            spreadRadius: 15,
+            offset: const Offset(0, 1),
+          ),
+        ],
+        borderRadius: BorderRadius.circular(40),
+      ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Icon(firsticon),
-          SizedBox(height: 40),
+          const SizedBox(height: 40),
           Text(
             text,
-            style: TextStyle(fontWeight: FontWeight.w500),
+            style: const TextStyle(fontWeight: FontWeight.w500),
           ),
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Icon(secondiconData),

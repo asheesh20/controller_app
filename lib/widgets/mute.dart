@@ -6,15 +6,18 @@ class Mute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(shape: BoxShape.circle, boxShadow: [
-        BoxShadow(
-          color: Colors.grey.withOpacity(0.25),
-          spreadRadius: 15,
-          blurStyle: BlurStyle.inner,
-          blurRadius: 1,
-          offset: const Offset(0, 0),
-        ),
-      ]),
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.grey.withOpacity(0.25),
+            spreadRadius: 15,
+            blurStyle: BlurStyle.inner,
+            blurRadius: 1,
+            offset: const Offset(0, 0),
+          ),
+        ],
+      ),
       child: const Icon(
         Icons.volume_off_sharp,
       ),
