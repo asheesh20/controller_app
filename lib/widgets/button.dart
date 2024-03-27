@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
 
-class ChannelButton extends StatelessWidget {
-  const ChannelButton({super.key});
+class Button extends StatelessWidget {
+  const Button(
+      {super.key,
+      required this.firsticon,
+      required this.secondiconData,
+      required this.text});
+
+  final String text;
+  final IconData firsticon;
+  final IconData secondiconData;
 
   @override
   Widget build(BuildContext context) {
@@ -19,20 +27,20 @@ class ChannelButton extends StatelessWidget {
             ),
           ],
           borderRadius: BorderRadius.circular(40)),
-      child: const Column(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Icon(Icons.add),
+          Icon(firsticon),
           SizedBox(height: 40),
           Text(
-            'Channel',
+            text,
             style: TextStyle(fontWeight: FontWeight.w500),
           ),
           SizedBox(
             height: 40,
           ),
-          Icon(Icons.remove),
+          Icon(secondiconData),
         ],
       ),
     );

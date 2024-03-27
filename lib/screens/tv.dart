@@ -1,10 +1,9 @@
-import 'package:controller_app/widgets/Channel_button.dart';
 import 'package:controller_app/widgets/menu.dart';
 import 'package:controller_app/widgets/mute.dart';
 import 'package:controller_app/widgets/numbers.dart';
 import 'package:controller_app/widgets/ok_button.dart';
 import 'package:controller_app/widgets/power.dart';
-import 'package:controller_app/widgets/volume_button.dart';
+import 'package:controller_app/widgets/button.dart';
 import 'package:flutter/material.dart';
 
 class TvScreen extends StatefulWidget {
@@ -71,22 +70,17 @@ class _TvScreenState extends State<TvScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      VolumeButton(),
-                      Mute(),
-                      /*
-                      Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Back(),
-                          SizedBox(
-                            height: 60,
-                          ),
-                          Forward(),
-                        ],
+                      //VolumeButton(),
+                      Button(
+                        firsticon: Icons.add,
+                        text: 'Volume',
+                        secondiconData: Icons.remove,
                       ),
-                      */
-                      // SizedBox(width: 50),
-                      ChannelButton(),
+                      Mute(),
+                      Button(
+                          firsticon: Icons.add,
+                          secondiconData: Icons.remove,
+                          text: 'Channel'),
                     ],
                   ),
                   SizedBox(
