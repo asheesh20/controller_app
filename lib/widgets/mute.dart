@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Forward extends StatelessWidget {
-  const Forward({super.key});
+class Mute extends StatelessWidget {
+  const Mute({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +12,12 @@ class Forward extends StatelessWidget {
           spreadRadius: 15,
           blurStyle: BlurStyle.inner,
           blurRadius: 1,
-          offset: const Offset(0, 1),
+          offset: const Offset(0, 0),
         ),
       ]),
-      child: const Icon(Icons.settings_remote),
+      child: const Icon(
+        Icons.volume_off_sharp,
+      ),
     );
   }
 }

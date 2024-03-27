@@ -18,7 +18,7 @@ class VolumeButton extends StatelessWidget {
       ),
     );*/
         Container(
-      width: 56,
+      width: 57,
       height: 180,
       decoration: BoxDecoration(
           shape: BoxShape.rectangle,

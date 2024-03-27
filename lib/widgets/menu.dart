@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MenuScreen extends StatelessWidget {
-  const MenuScreen({super.key});
+class Menu extends StatelessWidget {
+  const Menu({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class MenuScreen extends StatelessWidget {
           offset: const Offset(0, 0),
         ),
       ]),
-      child: Icon(
+      child: const Icon(
         Icons.menu_outlined,
       ),
     );

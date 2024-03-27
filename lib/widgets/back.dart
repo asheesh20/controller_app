@@ -15,7 +15,7 @@ class Back extends StatelessWidget {
           offset: const Offset(0, 1),
         ),
       ]),
-      child: Icon(
+      child: const Icon(
         Icons.undo_outlined,
       ),
     );

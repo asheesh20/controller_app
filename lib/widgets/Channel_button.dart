@@ -6,7 +6,7 @@ class ChannelButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 56,
+      width: 57,
       height: 180,
       decoration: BoxDecoration(
           shape: BoxShape.rectangle,

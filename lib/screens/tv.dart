@@ -1,16 +1,20 @@
 import 'package:controller_app/widgets/Channel_button.dart';
-import 'package:controller_app/widgets/back.dart';
-import 'package:controller_app/widgets/forward.dart';
 import 'package:controller_app/widgets/menu.dart';
+import 'package:controller_app/widgets/mute.dart';
 import 'package:controller_app/widgets/numbers.dart';
 import 'package:controller_app/widgets/ok_button.dart';
 import 'package:controller_app/widgets/power.dart';
 import 'package:controller_app/widgets/volume_button.dart';
 import 'package:flutter/material.dart';
 
-class TvScreen extends StatelessWidget {
+class TvScreen extends StatefulWidget {
   const TvScreen({super.key});
 
+  @override
+  State<TvScreen> createState() => _TvScreenState();
+}
+
+class _TvScreenState extends State<TvScreen> {
   @override
   Widget build(context) {
     return Scaffold(
@@ -68,6 +72,8 @@ class TvScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       VolumeButton(),
+                      Mute(),
+                      /*
                       Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -78,6 +84,7 @@ class TvScreen extends StatelessWidget {
                           Forward(),
                         ],
                       ),
+                      */
                       // SizedBox(width: 50),
                       ChannelButton(),
                     ],
@@ -101,7 +108,7 @@ class TvScreen extends StatelessWidget {
                       SizedBox(
                         width: 70,
                       ),
-                      MenuScreen(),
+                      Menu(),
                     ],
                   ),
                   SizedBox(
