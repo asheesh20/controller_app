@@ -12,15 +12,12 @@ class Numbers extends StatefulWidget {
 class _NumbersState extends State<Numbers> {
   @override
   Widget build(BuildContext context) {
-    //final Size size = MediaQuery.of(context).size;
     return GestureDetector(
       onTap: () {
-        /* Navigator.of(context).push(
-            MaterialPageRoute(builder: (context) => const DigitsScreen()));*/
         showDialog(
           context: context,
           builder: (context) => const AlertDialog(
-            content: remotePopUpTv(),
+            content: RemotePopUpTv(),
           ),
         );
       },

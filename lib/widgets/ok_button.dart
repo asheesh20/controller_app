@@ -24,7 +24,6 @@ class OkButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          //Icon(Icons.arrow_drop_up_sharp),
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.arrow_drop_up_sharp),
@@ -32,9 +31,7 @@ class OkButton extends StatelessWidget {
           Expanded(
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              //crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                //Icon(Icons.arrow_left_sharp),
                 IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.arrow_left_sharp),
@@ -49,7 +46,6 @@ class OkButton extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
-                //Icon(Icons.arrow_right_sharp),
                 IconButton(
                   onPressed: () {},
                   icon: const Icon(Icons.arrow_right_sharp),
@@ -57,7 +53,6 @@ class OkButton extends StatelessWidget {
               ],
             ),
           ),
-          //Icon(Icons.arrow_drop_down_sharp),
           IconButton(
             onPressed: () {},
             icon: const Icon(Icons.arrow_drop_down_sharp),

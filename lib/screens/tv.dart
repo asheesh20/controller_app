@@ -23,13 +23,6 @@ class _TvScreenState extends State<TvScreen> {
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: [
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                BottomButton(text: 'Another One(1/3)'),
-                BottomButton(text: 'Can Control'),
-              ],
-            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -44,10 +37,26 @@ class _TvScreenState extends State<TvScreen> {
                   'Please try to match with 3 keys at least',
                   maxLines: 2,
                 ),
-                const SizedBox(height: 50),
+                const SizedBox(height: 30),
                 box(),
                 const SizedBox(
-                  height: 10,
+                  height: 2,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    BottomButton(
+                      text: 'Another One(1/3)',
+                      color: lightBlue,
+                    ),
+                    BottomButton(
+                      text: 'Can Control',
+                      color: yellow,
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 5,
                 )
               ],
             ),
@@ -68,7 +77,6 @@ class _TvScreenState extends State<TvScreen> {
         boxShadow: [
           BoxShadow(
             color: grey,
-            //blurRadius: 0,
             spreadRadius: 1,
           ),
         ],
@@ -87,7 +95,6 @@ class _TvScreenState extends State<TvScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              //VolumeButton(),
               Button(
                 firsticon: Icons.add,
                 text: 'Volume',

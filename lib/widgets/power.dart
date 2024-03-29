@@ -17,12 +17,12 @@ class Power extends StatelessWidget {
           ),
         ],
       ),
-      child: //Icon(Icons.power_settings_new_rounded),
-          IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.power_settings_new_rounded,
-              )),
+      child: IconButton(
+        onPressed: () {},
+        icon: const Icon(
+          Icons.power_settings_new_rounded,
+        ),
+      ),
     );
   }
 }

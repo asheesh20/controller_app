@@ -31,12 +31,10 @@ class _MuteState extends State<Mute> {
           ),
         ],
       ),
-      child: // Icon( Icons.volume_off_sharp),
-          IconButton(
+      child: IconButton(
         onPressed: () {
           toggleMute();
         },
-        //icon: Icon(Icons.volume_off_sharp),
         icon: isMuted
             ? const Icon(Icons.volume_off_sharp)
             : const Icon(Icons.volume_up_sharp),
