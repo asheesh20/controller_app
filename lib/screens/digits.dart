@@ -194,8 +194,14 @@ class RemoteButton extends StatelessWidget {
   Widget build(context) {
     return ElevatedButton(
       onPressed: onPressed,
+      style: ButtonStyle(
+        shape: MaterialStateProperty.all(
+          RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+      ),
       child: Text(number),
-      //style: ButtonStyle(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
     );
   }
 }

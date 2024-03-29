@@ -9,7 +9,6 @@ class BottomButton extends StatelessWidget {
   @override
   Widget build(context) {
     return Container(
-      color: Colors.blue,
       height: 40,
       width: 159,
       child: ElevatedButton(
