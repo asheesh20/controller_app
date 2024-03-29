@@ -1,3 +1,4 @@
+import 'package:controller_app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
 class Menu extends StatelessWidget {
@@ -10,7 +11,7 @@ class Menu extends StatelessWidget {
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.4),
+            color: grey300,
             spreadRadius: 15,
             offset: const Offset(0, 0),
           ),

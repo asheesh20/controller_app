@@ -1,3 +1,5 @@
+import 'package:controller_app/utils/colors.dart';
+import 'package:controller_app/widgets/bottom_button.dart';
 import 'package:controller_app/widgets/menu.dart';
 import 'package:controller_app/widgets/mute.dart';
 import 'package:controller_app/widgets/numbers.dart';
@@ -18,25 +20,37 @@ class _TvScreenState extends State<TvScreen> {
   Widget build(context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Stack(
+          alignment: Alignment.bottomCenter,
           children: [
-            const Center(
-              child: Text(
-                'TV Match',
-                style: TextStyle(fontSize: 18),
-              ),
+            const Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                BottomButton(text: 'Another One(1/3)'),
+                BottomButton(text: 'Can Control'),
+              ],
             ),
-            const SizedBox(height: 10),
-            const Text(
-              'Please try to match with 3 keys at least',
-              maxLines: 2,
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Center(
+                  child: Text(
+                    'TV Match',
+                    style: TextStyle(fontSize: 18),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                const Text(
+                  'Please try to match with 3 keys at least',
+                  maxLines: 2,
+                ),
+                const SizedBox(height: 50),
+                box(),
+                const SizedBox(
+                  height: 10,
+                )
+              ],
             ),
-            const SizedBox(height: 50),
-            box(),
-            const SizedBox(
-              height: 10,
-            )
           ],
         ),
       ),
@@ -53,7 +67,7 @@ class _TvScreenState extends State<TvScreen> {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.4),
+            color: grey,
             //blurRadius: 0,
             spreadRadius: 1,
           ),

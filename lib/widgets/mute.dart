@@ -1,7 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:controller_app/utils/colors.dart';
 
-class Mute extends StatelessWidget {
+class Mute extends StatefulWidget {
   const Mute({super.key});
+
+  @override
+  State<Mute> createState() => _MuteState();
+}
+
+class _MuteState extends State<Mute> {
+  bool isMuted = true;
+  void toggleMute() {
+    setState(() {
+      isMuted = !isMuted;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +23,7 @@ class Mute extends StatelessWidget {
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.25),
+            color: grey300,
             spreadRadius: 15,
             blurStyle: BlurStyle.inner,
             blurRadius: 1,
@@ -18,8 +31,15 @@ class Mute extends StatelessWidget {
           ),
         ],
       ),
-      child: const Icon(
-        Icons.volume_off_sharp,
+      child: // Icon( Icons.volume_off_sharp),
+          IconButton(
+        onPressed: () {
+          toggleMute();
+        },
+        //icon: Icon(Icons.volume_off_sharp),
+        icon: isMuted
+            ? const Icon(Icons.volume_off_sharp)
+            : const Icon(Icons.volume_up_sharp),
       ),
     );
   }
