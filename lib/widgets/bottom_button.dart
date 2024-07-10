@@ -24,7 +24,7 @@ class BottomButton extends StatelessWidget {
         ),
         child: Text(
           text,
-          style: const TextStyle(color: Colors.black),
+          style: const TextStyle(color: Colors.white),
         ),
       ),
     );

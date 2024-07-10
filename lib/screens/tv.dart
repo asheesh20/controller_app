@@ -47,7 +47,7 @@ class _TvScreenState extends State<TvScreen> {
                   children: [
                     BottomButton(
                       text: 'Another One(1/3)',
-                      color: lightBlue,
+                      color: Color(0xFF012B5B),
                     ),
                     BottomButton(
                       text: 'Can Control',
